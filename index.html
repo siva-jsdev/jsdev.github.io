@@ -4,28 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.css"
-    /> -->
+    <title>STL Clean and Green</title>
+    <!-- <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" 
+          integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" 
+          crossorigin="anonymous" /> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" 
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+            crossorigin="anonymous">
+    </script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Power Washing</title>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <!-- <base href="/"> -->
+    <link rel="stylesheet" href="./styles.css"/>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Logo</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark header-bar header-bar">
       <button
         class="navbar-toggler"
         type="button"
@@ -39,15 +41,36 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Our Services</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarScrollingDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Our Services
+            </a>
+            <ul
+              class="dropdown-menu services-dropdown"
+              aria-labelledby="navbarScrollingDropdown"
+            >
+              <li><a class="dropdown-item" href="#services">Residential</a></li>
+              <li>
+                <a class="dropdown-item" href="#commercial">Commercial</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#why">Why STL C&G?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
@@ -57,15 +80,8 @@
     </nav>
     <div id="home">
       <div class="img-with-text row">
-        <img
-          width="100%"
-          src="https://via.placeholder.com/720x400"
-          alt=""
-          srcset=""
-        />
-        <span class="text">
-          POWER WASHING PROS STL LICENSED & INSURED POWER WASHING EXPERTS
-        </span>
+        <img width="100%" src="./images/sa-2.jpeg" alt="" srcset="" />
+        <span class="text"> </span>
       </div>
       <div class="image-left row">
         <img
@@ -76,24 +92,35 @@
           srcset=""
         />
         <div class="col-xs-12 col-sm-6 text-section">
-          <div class="heading">Power Washing in St. Louis</div>
+          <div class="heading">Our Mission</div>
           <hr class="separator" />
           <div class="body">
-            Based in Chesterfield, MO, Bob and Brian from Power Washing Pros STL
-            provide superior pressure washing services. We work for residential
-            and lite-commercial clients in St. Louis County and the surrounding
-            areas.
+            STL Clean & Green is a STL based business providing premier pressure
+            washing services to homes across Missouri area since 2017. This
+            ecofriendly company was founded and has been under the leadership of
+            Nathan Smithee, an STL native. While scrolling through the website,
+            hopefully any questions you have about what STL Clean and Green can
+            do for you will be answered. If you would like to inquire about our
+            services please refer to the Contact Us section!
           </div>
         </div>
+      </div>
+      <div id="services" class="text-left row">
+        <div class="heading">Our Services</div>
       </div>
       <div class="text-left row">
-        <div class="col-xs-12 col-sm-6 text-section">
-          <div class="heading">Why Choose Us</div>
+        <div id="residential" class="col-xs-12 col-sm-6 text-section">
+          <div class="heading">Residential</div>
           <hr class="separator" />
           <div class="body">
-            Our locally owned and operated company has been in business for more
-            than four years. With the experience we have earned, we deliver
-            exceptional work to our large portfolio of clients.
+            STL Clean and Green is here to help make you feel like your home is
+            able to redefine curb appeal. This specialized system is able to
+            remove the debris, grime, and various external marks that occur over
+            time. Not only do we want to see results from utilizing our state of
+            the art equipment but more importantly we provide education and care
+            in preventing any secondary effects that can come from high pressure
+            washing on homes, buildings, any place where water can become a
+            problem.
           </div>
         </div>
         <img
@@ -112,56 +139,36 @@
           alt=""
           srcset=""
         />
-        <div class="col-xs-12 col-sm-6 text-section">
-          <div class="heading">What We Do</div>
+        <div id="commercial" class="col-xs-12 col-sm-6 text-section">
+          <div class="heading">Commercial</div>
           <hr class="separator" />
           <div class="body">
-            Apart from power washing, our team also offers concrete sealing,
-            roof washing, and other cleaning services. Our commitment to
-            perfection and drive to deliver exceptional customer care set us
-            apart from the competition.
+            Our client base is diverse; however, with each visit it is paramount
+            that a solid relationship based on communication is created with
+            each our clients. It doesn’t take much to know how to use a hose but
+            pressure washing is a much safer and ecofriendly option that offers
+            much more than what is commonly perceived. With STL Clean and Green
+            team, during the consultation and throughout the process we make
+            sure to include the client with updates and also any findings that
+            may require attention. We are here to help your house have it’s best
+            shine, and to keep it that way!
           </div>
         </div>
       </div>
     </div>
-    <div id="services">
+    <div>
       <div class="text-left row">
         <div class="col-xs-12 col-sm-6 text-section">
           <div class="heading">Offering Reliable Power Washing Services</div>
           <hr class="separator" />
           <div class="body">
-            At Power Washing Pros STL, we put a large focus on the quality of
-            our services. You can be assured that our friendly team will work
-            closely with you to ensure that your property’s exterior is free of
-            dirt and stains whether your using our roof cleaning services or our
-            house washing services.
-          </div>
-        </div>
-        <img
-          class="col-xs-12 col-sm-6"
-          width="400px"
-          src="https://via.placeholder.com/320x320"
-          alt=""
-          srcset=""
-        />
-      </div>
-      <div class="image-left row">
-        <img
-          class="col-xs-12 col-sm-6"
-          width="400px"
-          src="https://via.placeholder.com/320x320"
-          alt=""
-          srcset=""
-        />
-        <div class="col-xs-12 col-sm-6 text-section">
-          <div class="heading">Our Services</div>
-          <hr class="separator" />
-          <div class="body">
-            We deliver a wide range of solutions to lite-commercial and
-            residential clients in St. Louis County and the surrounding areas.
-            Each service we offer comes with the confidence that all of our
-            staff members work hard to fulfill your exterior cleaning needs. We
-            offer the following:
+            Pressure washing machinery used by STL C&G is specialized to use
+            high temperature water that is soft. This is important for many
+            reasons, but the most important is mold prevention. Without having
+            to use excessive force, minimizing the amount of moisture that
+            potentially can seep in between siding, around windows, even
+            including the roof, our goal is to address the main concern and to
+            prevent further issues from developing in the future.
             <div class="service-list">
               <ul>
                 <li>House Washing</li>
@@ -180,29 +187,76 @@
             </div>
           </div>
         </div>
-        <div class="text-left row">
-          <div class="col-xs-12 col-sm-6 text-section">
-            <div class="heading">Our Recent Projects</div>
-            <hr class="separator" />
-            <div class="body">
-              At our company, our skilled and efficient team cleans a wide
-              variety of surfaces, from dirty sidewalks and driveways to grimy
-              poolside tiles and garage doors. We strive to continue providing
-              unparalleled service and exceed our clients’ expectations with
-              every cleaning project.
-            </div>
+        <img
+          class="col-xs-12 col-sm-6"
+          width="400px"
+          src="https://via.placeholder.com/320x320"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="image-left row">
+        <img
+          class="col-xs-12 col-sm-6"
+          width="400px"
+          src="https://via.placeholder.com/320x320"
+          alt=""
+          srcset=""
+        />
+        <div id="why" class="col-xs-12 col-sm-6 text-section">
+          <div class="heading">Why STL C&G?</div>
+          <hr class="separator" />
+          <div class="body">
+            Our skilled and efficient team cleans a wide variety of surfaces,
+            from dirty sidewalks and driveways to grimy poolside tiles and
+            garage doors. We strive to continue providing unparalleled service
+            and exceed our clients’ expectations with every cleaning project.
+            Apart from power washing, our team also offers concrete sealing,
+            roof washing, and other cleaning services.
           </div>
-          <img
-            class="col-xs-12 col-sm-6"
-            width="400px"
-            src="https://via.placeholder.com/320x320"
-            alt=""
-            srcset=""
-          />
         </div>
+        <div class="text-left row">
+          <div class="heading" id="gallery">Gallery</div>
+            <div id="gallery-carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+              <ol class="carousel-indicators">
+                <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#gallery-carousel" data-slide-to="1"></li>
+                <li data-target="#gallery-carousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#gallery-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#gallery-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
       </div>
     </div>
-    <div id="aboutUs"></div>
     <div id="contactUs"></div>
   </body>
 </html>

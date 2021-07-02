@@ -1,3 +1,15 @@
+.header-bar {
+  background-color: #649e64 !important;
+  font-size: 20px;
+  font-family: orbitron;
+  text-transform: uppercase;
+}
+
+.services-dropdown {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
 .img-with-text {
   position: relative;
   img {
@@ -42,4 +54,12 @@
 .service-list {
   display: flex;
   margin-top: 20px;
+}
+
+.carousel-indicators .active {
+  background-color: green;
+}
+
+.carousel-indicators li {
+  background-color: burlywood;
 }
